@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Amore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div class="logo">Food <span>Amore</span></div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#ABOUT US">ABOUT US</a></li>
+                <li><a href="#MENU">MENU</a></li>
+                <li><a href="#booking">RESERVATION</a></li>
+                <li><a href="#BLOG">BLOG</a></li>
+                <li><a href="#CONTACT">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="ABOUT US" class="hero">
+        <div class="content">
+            <h1>Taste the flavours of <span>Heaven</span></h1>
+            <p>Order from a weekly menu of tasty meals at the click of a button. Say goodbye to meal planning and grocery shopping!</p>
+            <button class="btn book">Book Table</button>
+            <button class="btn Menu">Our Menu</button>
+        </div>
+        <div class="image">
+            <img src="/img/bgg.png" alt="South Indian Food">
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-content">
+            <h4>About</h4>
+            <h2>FOOD AMORE</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel sum ullamcorper, suscipit eros quis, pellentesque sapien. Sed ventis nisl a auris laoreet, at tincidunt lectus volutpat. Etiam semper ligula sollicitudin ante vehicula pellentesque sapien.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel sum ullamcorper, suscipit eros quis, pellentesque sapien. Sed ventis nisl a auris laoreet, at tincidunt lectus volutpat. Etiam semper ligula sollicitudin ante vehicula pellentesque sapien.</p>
+            <a href="#" class="read-more">Read More →</a>
+        </div>
+        <div class="about-image">
+            <div class="image-overlay"></div>
+            <img src="/img/lol-re.png" alt="Delicious Indian Thali">
+        </div>
+    </section>
+
+    <section id="MENU" class="menu">
+    <h3>Food Amore</h3>
+    <h2>RESTAURANT MENU</h2>
+    <div class="menu-filters">
+        <button class="filter-btn active">All Dishes</button>
+        <button class="filter-btn" data-target="lunch">Lunch</button>
+        <button class="filter-btn" data-target="Dinner">Dinner</button>
+        <button class="filter-btn" data-target="Drinks">Drinks</button>
+    </div>
+    
+    <div class="menu-items">
+        <div class="menu-item Lunch">
+            <h3>Lunch</h3>
+        <div class="menu-item">
+            <img src="img/d6.jpg" alt="Steak">
+            <p>Steak</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/spga.jpg" alt="Chicken">
+            <p>Spaghetti</p>
+        </div>
+    </div>
+    <div class="menu-item Dinner">
+        <h3 id="Dinner">Dinner</h3>
+
+        <div class="menu-item">
+            <img src="img/d3.jpg" alt="Chicken">
+            <p>Pasta</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/d2.jpg" alt="Kabab">
+            <p>Broccoli soup</p>
+        </div>
+        
+     </div>
+     <div class="menu-item Drinks">
+        <h3>Drinks & Desserts</h3>
+        <div class="menu-item">
+            <img src="img/b1.jpg" alt="Steak">
+            <p>Cappuccino</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/cake.jpg" alt="Kabab">
+            <p>Cheesecake</p>
+        </div>
+     </div>
+    </div>
+</section>
+
+<section class="special-dish">
+    <h3>Deals Today</h3>
+    <h2>TODAY SPECIAL DISH</h2>
+    <div class="special-items">
+        <div class="special-item">
+            <img src="img/d4.jpg" alt="Chicken Malai">
+            <h4>French fries</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum</p>
+            <strong>Starts at ₹249</strong>
+        </div>
+        <div class="special-item">
+            <img src="img/d1.jpg" alt="Aloo Kofta">
+            <h4>Soup & Garlic bread</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum</p>
+            <strong>Starts at ₹299</strong>
+        </div>
+        <div class="special-item">
+            <img src="img/dd.jpg" alt="Hakka Noodles">
+            <h4>Sandwich</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum</p>
+            <strong>Starts at ₹209</strong>
+        </div>
+    </div>
+</section>
+
+<section id="booking" class="booking">
+    <div class="booking-form" >
+        <h2>Book Your Table</h2>
+        <form method="POST" id="reservationForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="date" id="date" required>
+            <textarea id="comments" placeholder="Comments"></textarea>
+            <button type="submit">Book Now!</button>
+            <p id="result"></p>
+        </form>
+    </div>
+</section>
+
+<section class="special-offers">
+    <h3>From the Menu</h3>
+    <h2>SPECIAL OFFERS</h2>
+    <div class="offers-list">
+        <div class="offer-item">
+            <img src="img/ds.jpg" alt="Fish Curry">
+            <div class="offer-info">
+                <h4>Salad</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur Vesti ullamcorper.</p>
+                <strong>₹249 <span class="old-price">₹599</span></strong>
+            </div>
+        </div>
+        <div class="offer-item">
+            <img src="img/sp1.jpg" alt="Chicken Tikka">
+            <div class="offer-info">
+                <h4>Chicken Tandoori</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur Vesti ullamcorper.</p>
+                <strong>₹499 <span class="old-price">₹999</span></strong>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="BLOG" class="feedback-section">
+    <h2>Food Lover</h2>
+    <h1>CUSTOMER FEEDBACK</h1>
+    
+    <div class="feedback-container">
+        <div class="feedback-card">
+            <p>"Amazing food and great service! Highly recommended."</p>
+            <strong>Ravi</strong>
+        </div>
+        <div class="feedback-card">
+            <p>"Loved the ambiance and the variety of dishes."</p>
+            <strong>Asha</strong>
+        </div>
+        <div class="feedback-card">
+            <p>"Best restaurant experience I've had in a long time!"</p>
+            <strong>Priya</strong>
+        </div>
+    </div>
+</section>
+
+<section class="stats-section">
+    <div class="stats-container">
+        <div>
+            <h2>220+</h2>
+            <p>Best Dishes</p>
+        </div>
+        <div>
+            <h2>50+</h2>
+            <p>Awards Won</p>
+        </div>
+        <div>
+            <h2>80+</h2>
+            <p>Our Chefs</p>
+        </div>
+        <div>
+            <h2>200+</h2>
+            <p>Daily Customers</p>
+        </div>
+    </div>
+</section>
+
+<section id="CONTACT" class="newsletter-section">
+    <h1>Subscribe to our Newsletter</h1>
+    <h5>Stay updated with the latest news and offers from Food Lover.</h5>
+    <form onsubmit="subscribe(event)">
+        <input type="email" id="email" placeholder="Enter your Email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+    <h6 id="message"></h6>
+</section>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
