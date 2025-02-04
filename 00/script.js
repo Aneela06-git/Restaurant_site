@@ -43,16 +43,17 @@ document.addEventListener("DOMContentLoaded", () => {
         reservationForm.addEventListener("submit", function(event) {
             event.preventDefault();
             //alert("Your table has been booked!");
-            document.getElementById('message1').textContent = `Your table has been booked!, ${email}!`;
-            
+            document.getElementById('result').textContent = `Your table has been booked!, ${email}!`;
+            this.reset();
         });
     }
+    
 });
 
-// Subscribe function moved outside DOMContentLoaded
 function subscribe(event) {
     event.preventDefault();
     const email = document.getElementById('email').value;
     document.getElementById('message').textContent = `Thank you for subscribing, ${email}!`;
+    this.reset();
 }
 
