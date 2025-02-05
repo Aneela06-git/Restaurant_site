@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => { 
     const bookButton = document.querySelector(".book");
-    const menuButton = document.querySelector(".menu");
+    const menuButton = document.querySelector(".menu1");
     const readMoreLink = document.querySelector(".read-more");
     const lunchButton = document.querySelector(".menu-item-Lunch");
     const filterBtns = document.querySelectorAll(".filter-btn");
