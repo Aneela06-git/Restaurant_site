@@ -1,11 +1,13 @@
-/* Base styles for desktop */
+*{
+    font-family:initial;
+}
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    text-align: center;
+    background-color: #fff;
     box-sizing: border-box;
 }
-
 p {
     font-size: 16px;
     color: #c6782a;
@@ -26,7 +28,7 @@ a {
 }
 
 header {
-    background: black;
+    background:#d57d1f;
     color: white;
     padding: 10px 20px;
 }
@@ -42,16 +44,17 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: #111;
+    background:transparent;
 }
 
 .logo {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: lighter;
 }
 
 .logo span {
-    color: orange;
+    color: #222;
+    font-style: oblique;
 }
 
 nav ul {
@@ -95,24 +98,16 @@ nav ul li {
     color: rgb(229, 160, 32);
   }
 .book {
-    background: rgb(229, 160, 32);
+    background: #d57d1f;
     color: white;
 }
 
-.menu {
+.menu1 {
     background: transparent;
-    border: 10px solid white;
+    border: 10px solid white; 
     color: white;
 }
 
-.btn-menu {
-    padding: 1px 20px;
-    margin: 5px;
-    border: none;
-    background: #ffffff;
-    cursor: pointer;
-    border-radius: 5px;
-}
 
 .image img {
     width: 300px;
@@ -223,112 +218,6 @@ nav ul li {
     border-radius: 10px;
 }
 
-.special-item strong {
-    display: block;
-    margin-top: 10px;
-    color: #c47b2d;
-    font-size: 18px;
-}
-
-/* Mobile Responsiveness (below 768px) */
-@media (max-width: 768px) {
-
-    .hero {
-        flex-direction: column;
-        padding: 30px;
-    }
-
-    .hero .content {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .banner {
-        height: 60vh;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu-items,
-    .special-items {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .about-content {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .about-image img {
-        max-width: 90%;
-        margin-top: 20px;
-    }
-
-    .menu-item,
-    .special-item {
-        max-width: 90%;
-        margin-bottom: 20px;
-    }
-
-    .image img {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    header,
-    nav,
-    .hero,
-    .menu,
-    .special-dish {
-        padding: 10px;
-    }
-}
-
-/* Extra small screens (below 480px) */
-@media (max-width: 450px) {
-
-    .logo {
-        font-size: 20px;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .btn {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-
-    .menu-item,
-    .special-item {
-        max-width: 100%;
-        margin: 10px 0;
-    }
-
-    .about-content h2 {
-        font-size: 24px;
-    }
-
-    .about-content p {
-        font-size: 14px;
-    }
-
-    .menu-items,
-    .special-items {
-        gap: 10px;
-    }
-}
-
 .booking {
     background: url('/img/01.jpg') no-repeat center center/cover;
     padding: 50px;
@@ -394,24 +283,16 @@ nav ul li {
     margin-left: 10px;
 }
 
-@media (min-width: 768px) {
-    .offers-list {
-        flex-direction: row;
-        justify-content: center;
-    }
-}
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #fff;
+.special-item strong {
+    display: block;
+    margin-top: 10px;
+    color: #c47b2d;
+    font-size: 18px;
 }
 
-/* Feedback Section */
 .feedback-section {
-    background: url('background.jpg') no-repeat center center/cover;
+    background: url('img/background.jpg') no-repeat center center/cover;
+    background-color:#d57d1f;
     padding: 50px 20px;
     color: white;
 }
@@ -435,7 +316,6 @@ body {
     color: black;
 }
 
-/* Stats Section */
 .stats-section {
     padding: 40px 20px;
     background: #fff;
@@ -452,7 +332,6 @@ body {
     color: #f8b400;
 }
 
-/* Newsletter Section */
 .newsletter-section {
     background: #d57d1f;
     padding: 40px;
@@ -479,8 +358,125 @@ body {
     margin-top: 10px;
 }
 
-/* Responsive Styles */
+.footer {
+    background-color: #111;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+    border-top: 4px solid #f8b400;
+}
+.footer div {
+    max-width: 300px;
+}
+.footer h2 {
+    color: white;
+}
+.footer p, .footer a {
+    color: #aaa;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #f8b400;
+}
+.footer .brand {
+    font-size: 24px;
+    font-style: italic;
+}
+.footer .highlight {
+    color: #f8b400;
+}
+.footer .read-more {
+    color: #f8b400;
+    font-weight: bold;
+    cursor: pointer;
+}
+.footer .read-more:hover {
+    text-decoration: underline;
+}
+.footer .social i {
+    color: #f8b400;
+    margin-right: 10px;
+}
+.instagram-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+.instagram-gallery img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: #aaa;
+}
+
+
+
 @media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .hero .content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .banner {
+        height: 60vh;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .menu-items,
+    .special-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+
+    .menu-item,
+    .special-item {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .offers-list {
+        flex-direction: row;
+        justify-content: center;
+    }
     .feedback-container,
     .stats-container {
         flex-direction: column;
@@ -494,4 +490,50 @@ body {
     .newsletter-section input {
         width: 90%;
     }
+
+    .header,
+    .nav,
+    .hero,
+    .menu,
+    .special-dish {
+        padding: 10px;
+    }
 }
+
+@media (max-width: 450px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .menu-item,
+    .special-item {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .about-content h2 {
+        font-size: 24px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .menu-items,
+    .special-items {
+        gap: 10px;
+    }
+}
+
+
+
